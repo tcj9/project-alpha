@@ -1,25 +1,70 @@
-# CakePHP 3
+# Ignore system files
+.DS_Store
+Thumbs.db
 
-/vendor/*
-/config/app.php
+# Ignore node_modules folder
+node_modules/
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
 
-/logs/*
-!/logs/empty
+# Ignore sensitive files
+.env
+config.php
+upload.php
 
-# CakePHP 2
+# Ignore uploaded files
+uploads/
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+# Ignore compiled files
+*.out
+*.exe
+*.class
+
+# Ignore cache files
+.cache/
+*.cache
+*.tmp
+*.temp
+
+# Ignore compiled PHP extensions
+*.so
+
+# Ignore SASS cache
+.sass-cache/
+
+# Ignore Symfony directories
+/app/cache/*
+/app/logs/*
+
+# Ignore Laravel specific files
+/storage/*
+/vendor/
+/node_modules/
+
+# Ignore compiled assets
+/public/js/*.js
+/public/css/*.css
+
+# Ignore other files you may want to exclude
+*.bak
+*.swp
+
+# Ignore static files
+public/assets/
+public/uploads/
+
+# Ignore additional files generated during builds or testing
+coverage/
+build/
+dist/
+test-output/
