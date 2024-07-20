@@ -1,24 +1,4 @@
 /* styles/auth.css */
-/* .section {
-  padding: 3rem 1.5rem;
-  background-color: #f9f9f9;
-}
-
-.title {
-  color: #333;
-  text-align: center;
-}
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.field {
-  margin-bottom: 1rem;
-} */
-
-
 :root {
   --brandColor: hsl(166, 67%, 51%);
   --background: rgb(247, 247, 247);
