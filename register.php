@@ -49,6 +49,47 @@
 				</div>
 			</div>
 		</section>
+
+
+		<section class="hero is-fullheight">
+			<div class="hero-body has-text-centered">
+				<div class="login">
+					<form @submit.prevent="loginUser">
+						<div class="field">
+							<div class="control">
+								<input class="input is-medium is-rounded" type="text" v-model="username" placeholder="Username"
+									autocomplete="username" required />
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<input class="input is-medium is-rounded" type="email" v-model="email" placeholder="Email"
+									autocomplete="email" required />
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<input class="input is-medium is-rounded" type="password" v-model="username" required
+									placeholder="Password" autocomplete="current-password" required />
+							</div>
+						</div>
+						<br />
+						<button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit">
+							Register
+						</button>
+					</form>
+					<br>
+					<nav class="level">
+						<div class="level-item has-text-centered">
+							<div>
+								<a href="/login">Already Have An Account</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</section>
+
 	</div>
 	<script src="libs/vue.min.js"></script>
 	<script src="scripts/js/register.js"></script>

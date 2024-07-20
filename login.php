@@ -37,12 +37,12 @@
 					<nav class="level">
 						<div class="level-item has-text-centered">
 							<div>
-								<a href="#">Forgot Password?</a>
+								<a href="/forgot-password">Forgot Password?</a>
 							</div>
 						</div>
 						<div class="level-item has-text-centered">
 							<div>
-								<a href="#">Create an Account</a>
+								<a href="/register">Create an Account</a>
 							</div>
 						</div>
 					</nav>
