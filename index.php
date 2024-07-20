@@ -3,7 +3,7 @@
 <html lang="en" data-theme="light">
 
 <head>
-  <?php include('scripts/php/global_head_import'); ?>
+  <?php require 'scripts/php/global_head_import'; ?>
   <title>ServiceConnect</title>
   <link rel="stylesheet" href="styles/index.css">
 </head>
