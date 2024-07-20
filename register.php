@@ -69,7 +69,7 @@
 						</div>
 						<div class="field">
 							<div class="control">
-								<input class="input is-medium is-rounded" type="password" v-model="username" required
+								<input class="input is-medium is-rounded" type="password" v-model="password" required
 									placeholder="Password" autocomplete="current-password" required />
 							</div>
 						</div>
