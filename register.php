@@ -14,7 +14,7 @@
 		<section class="hero is-fullheight">
 			<div class="hero-body has-text-centered">
 				<div class="login">
-					<form @submit.prevent="loginUser">
+					<form @submit.prevent="registerUser">
 						<div class="field">
 							<div class="control">
 								<input class="input is-medium is-rounded" type="text" v-model="username" placeholder="Username"
