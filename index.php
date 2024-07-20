@@ -1,6 +1,6 @@
 <!-- index.php -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
