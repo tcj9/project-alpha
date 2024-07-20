@@ -67,3 +67,6 @@ coverage/
 build/
 dist/
 test-output/
+
+
+feed.txt
