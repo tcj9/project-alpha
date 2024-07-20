@@ -21,7 +21,6 @@
 									autocomplete="username" required />
 							</div>
 						</div>
-
 						<div class="field">
 							<div class="control">
 								<input class="input is-medium is-rounded" type="password" v-model="username" required
