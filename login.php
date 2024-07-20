@@ -3,36 +3,50 @@
 <html lang="en" data-theme="light">
 
 <head>
-<?php include 'scripts/php/global_head_import.php'; ?>
-<title>Login - ServiceConnect</title>
-	<link rel="stylesheet" href="styles/auth.css">
+	<?php include 'scripts/php/global_head_import.php'; ?>
+	<title>Login - ServiceConnect</title>
+	<link rel="stylesheet" href="styles/login.css">
 </head>
 
 <body>
 	<?php include 'scripts/php/header.php'; ?>
 	<div id="login-app">
-		<section class="section">
-			<div class="container">
-				<h1 class="title">Login</h1>
-				<form @submit.prevent="loginUser">
-					<div class="field">
-						<label class="label">Username</label>
-						<div class="control">
-							<input class="input" type="text" v-model="username" required>
+		<section class="hero is-fullheight">
+			<div class="hero-body has-text-centered">
+				<div class="login">
+					<form @submit.prevent="loginUser">
+						<div class="field">
+							<div class="control">
+								<input class="input is-medium is-rounded" type="text" v-model="username" placeholder="Username"
+									autocomplete="username" required />
+							</div>
 						</div>
-					</div>
-					<div class="field">
-						<label class="label">Password</label>
-						<div class="control">
-							<input class="input" type="password" v-model="password" required>
+
+						<div class="field">
+							<div class="control">
+								<input class="input is-medium is-rounded" type="password" v-model="username" required
+									placeholder="Password" autocomplete="current-password" required />
+							</div>
 						</div>
-					</div>
-					<div class="field">
-						<div class="control">
-							<button class="button is-primary" type="submit">Login</button>
+						<br />
+						<button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit">
+							Login
+						</button>
+					</form>
+					<br>
+					<nav class="level">
+						<div class="level-item has-text-centered">
+							<div>
+								<a href="#">Forgot Password?</a>
+							</div>
 						</div>
-					</div>
-				</form>
+						<div class="level-item has-text-centered">
+							<div>
+								<a href="#">Create an Account</a>
+							</div>
+						</div>
+					</nav>
+				</div>
 			</div>
 		</section>
 	</div>
