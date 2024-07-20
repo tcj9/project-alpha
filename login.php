@@ -5,7 +5,7 @@
 <head>
 	<?php include 'scripts/php/global_head_import.php'; ?>
 	<title>Login - ServiceConnect</title>
-	<link rel="stylesheet" href="styles/login.css">
+	<link rel="stylesheet" href="styles/auth.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 	<div id="login-app">
 		<section class="hero is-fullheight">
 			<div class="hero-body has-text-centered">
-				<div class="login">
+				<div class="form-card">
 					<form @submit.prevent="loginUser">
 						<div class="field">
 							<div class="control">

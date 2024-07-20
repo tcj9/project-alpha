@@ -13,7 +13,7 @@
 	<div id="register-app">
 		<section class="hero is-fullheight">
 			<div class="hero-body has-text-centered">
-				<div class="login">
+				<div class="form-card">
 					<form @submit.prevent="registerUser">
 						<div class="field">
 							<div class="control">
