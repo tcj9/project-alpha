@@ -1,3 +1,4 @@
+<!-- scripts/php/register.php -->
 <?php
 include 'config.php';
 
