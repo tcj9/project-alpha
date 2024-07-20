@@ -3,8 +3,8 @@
 <html lang="en" data-theme="light">
 
 <head>
-	<?php include 'scripts/php/global_head_import'; ?>
-	<title>Login - ServiceConnect</title>
+<?php include 'scripts/php/global_head_import.php'; ?>
+<title>Login - ServiceConnect</title>
 	<link rel="stylesheet" href="styles/auth.css">
 </head>
 
