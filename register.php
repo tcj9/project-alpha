@@ -82,7 +82,7 @@
 					<nav class="level">
 						<div class="level-item has-text-centered">
 							<div>
-								<a href="/login">Already Have An Account</a>
+								<a href="/login.php">Already Have An Account</a>
 							</div>
 						</div>
 					</nav>

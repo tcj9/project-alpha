@@ -42,7 +42,7 @@
 						</div>
 						<div class="level-item has-text-centered">
 							<div>
-								<a href="/register">Create an Account</a>
+								<a href="/register.php">Create an Account</a>
 							</div>
 						</div>
 					</nav>
