@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ServiceConnect</title>
   <link rel="stylesheet" href="libs/bulma.min.css">
-  <link rel="stylesheet" href="libs/css.gg.min.css">
+  <link rel="stylesheet" href="libs/icons.css">
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/index.css">
 </head>
