@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -29,21 +29,21 @@
                             <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
                             <form @submit.prevent="registerUser">
                                 <div class="field">
-                                    <label class="label">Username</label>
                                     <div class="control">
-                                        <input class="input is-medium" type="text" v-model="username" required>
+                                        <input class="input is-medium" type="text" v-model="username"
+                                            placeholder="Username" required>
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <label class="label">Email</label>
                                     <div class="control">
-                                        <input class="input is-medium" type="email" v-model="email" required>
+                                        <input class="input is-medium" type="email" v-model="email" placeholder="Email"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <label class="label">Password</label>
                                     <div class="control">
-                                        <input class="input is-medium" type="password" v-model="password" required>
+                                        <input class="input is-medium" type="password" v-model="password"
+                                            placeholder="Password" required>
                                     </div>
                                 </div>
                                 <button class="button is-block is-primary is-fullwidth is-medium">Submit</button>
