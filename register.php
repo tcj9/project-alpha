@@ -3,7 +3,7 @@
 <html lang="en" data-theme="light">
 
 <head>
-	<?php include 'scripts/php/global_head_import'; ?>
+	<?php include('scripts/php/global_head_import'); ?>
 	<title>Register - ServiceConnect</title>
 	<link rel="stylesheet" href="styles/auth.css">
 </head>
