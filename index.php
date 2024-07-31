@@ -38,7 +38,7 @@
     </div>
   </main>
   <?php include './assets/scripts/php/global/foot_import.php'; ?>
-  <script src="./assets/scripts/js/main.js"></script>
+  <script src="./assets/scripts/js/index-anon.js"></script>
 </body>
 
 </html>
