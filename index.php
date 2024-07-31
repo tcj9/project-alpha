@@ -5,7 +5,7 @@
 <head>
   <?php include 'assets/scripts/php/global/head_import.php'; ?>
   <title>ServiceConnect</title>
-  <link rel="stylesheet" href="assets/styles/index-anon.css" />
+  <link rel="stylesheet" href="./assets/styles/index-anon.css" />
 </head>
 
 <body>
@@ -37,8 +37,8 @@
       </p>
     </div>
   </main>
-  <?php include 'assets/scripts/php/global/foot_import.php'; ?>
-  <script src="scripts/js/main.js"></script>
+  <?php include './assets/scripts/php/global/foot_import.php'; ?>
+  <script src="./assets/scripts/js/main.js"></script>
 </body>
 
 </html>
