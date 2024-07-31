@@ -3,7 +3,7 @@
 <html lang="en" data-theme="light">
 
 <head>
-  <?php include 'scripts/php/global/head_import.php'; ?>
+  <?php include 'assets/scripts/php/global/head_import.php'; ?>
   <title>ServiceConnect</title>
   <link rel="stylesheet" href="assets/styles/index-anon.css" />
 </head>
@@ -37,7 +37,7 @@
       </p>
     </div>
   </main>
-  <?php include 'scripts/php/global/foot_import.php'; ?>
+  <?php include 'assets/scripts/php/global/foot_import.php'; ?>
   <script src="scripts/js/main.js"></script>
 </body>
 
