@@ -1,6 +1,4 @@
-const { createApp: createIndexMainApp } = Vue;
-
-createIndexMainApp({
+createApp({
   data() {
     return {
       homepageImg: "",
@@ -24,4 +22,4 @@ createIndexMainApp({
   mounted() {
     this.setHomepageImg();
   },
-}).mount("#app");
+}).mount("#index-anon-app");

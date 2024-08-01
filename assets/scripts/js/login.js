@@ -1,10 +1,9 @@
-const { createApp } = Vue;
-
 createApp({
   data() {
     return {
       username: "",
       password: "",
+      currentYear: new Date().getFullYear(),
     };
   },
   methods: {

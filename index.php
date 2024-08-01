@@ -3,13 +3,13 @@
 <html lang="en" data-theme="light">
 
 <head>
-  <?php include 'assets/scripts/php/global/head_import.php'; ?>
+  <?php include './assets/scripts/php/global/head_import.php'; ?>
   <title>ServiceConnect</title>
   <link rel="stylesheet" href="./assets/styles/index-anon.css" />
 </head>
 
 <body>
-  <main id="app" class="hero is-white is-fullheight">
+  <main id="index-anon-app" class="hero is-white is-fullheight">
     <div class="hero-body">
       <div class="container is-fullhd">
         <div class="columns is-vcentered reverse-columns">
