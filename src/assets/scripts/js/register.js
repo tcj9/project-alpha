@@ -46,4 +46,7 @@ createApp({
       this.message = "";
     },
   },
+  mounted() {
+    console.clear();
+  },
 }).mount("#register-app");

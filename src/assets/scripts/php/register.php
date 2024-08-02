@@ -1,6 +1,9 @@
 <?php
 include 'config.php';
 
+use Ramsey\Uuid\Uuid;
+use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
+
 header('Content-Type: application/json');
 
 function respond($status, $message)
@@ -25,8 +28,8 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     respond('error', 'Invalid email format');
 }
 
-if (strlen($password) < 8) {
-    respond('error', 'Password must be at least 8 characters long');
+if (strlen($password) < 7) {
+    respond('error', 'Password must be at least 7 characters long');
 }
 
 try {
@@ -44,9 +47,13 @@ try {
 
     $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
-    $sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
+    // Generate a short UUID
+    $uuid = Uuid::uuid4();
+    $shortUuid = substr(base64_encode($uuid->getBytes()), 0, 22); // Shorten UUID to 22 characters
+
+    $sql = "INSERT INTO users (id, username, email, password) VALUES (?, ?, ?, ?)";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$username, $email, $hashedPassword]);
+    $stmt->execute([$shortUuid, $username, $email, $hashedPassword]);
 
     $pdo->commit();
     respond('success', 'User registered successfully');
@@ -54,5 +61,7 @@ try {
     $pdo->rollBack();
     error_log('Database error: ' . $e->getMessage());
     respond('error', 'An error occurred. Please try again later.');
+} catch (UnsatisfiedDependencyException $e) {
+    respond('error', 'UUID generation error: ' . $e->getMessage());
 }
 ?>

@@ -1,15 +1,15 @@
-<!-- register.php -->
+<!-- login.php -->
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 
 <head>
 	<?php include './assets/scripts/php/global/head_import.php'; ?>
-	<title>Register - ServiceConnect</title>
+	<title>Login - ServiceConnect</title>
 	<link rel="stylesheet" href="./assets/styles/auth.css" />
 </head>
 
 <body>
-	<main id="register-app" class="hero is-fullheight">
+	<main id="login-app" class="hero is-fullheight">
 		<div class="hero-body is-flex is-justify-content-center has-text-centered">
 			<div class="columns">
 				<div class="column">
@@ -18,25 +18,19 @@
 					</div>
 					<div class="form-card">
 						<section class="block py-2">
-							<h1 class="title is-2">Register</h1>
+							<h1 class="title is-2">Login</h1>
 						</section>
-						<form @submit.prevent="registerUser">
+						<form @submit.prevent="loginUser">
 							<div class="field">
 								<div class="control">
-									<input @input="clearMessage" class="input" type="text" v-model="username"
-										placeholder="Username" autocomplete="username" required />
-								</div>
-							</div>
-							<div class="field">
-								<div class="control">
-									<input @input="clearMessage" class="input" type="email" v-model="email"
-										placeholder="Email" autocomplete="email" required />
+									<input @input="clearMessage" class="input" type="text" v-model="login"
+										placeholder="Username or Email" autocomplete="username" required />
 								</div>
 							</div>
 							<div class="field">
 								<div class="control">
 									<input @input="clearMessage" class="input" type="password" v-model="password"
-										required placeholder="Password" autocomplete="new-password" required />
+										placeholder="Password" autocomplete="current-password" required />
 								</div>
 							</div>
 							<hr />
@@ -47,9 +41,14 @@
 						<br />
 						<nav class="level">
 							<div class="level-item has-text-centered">
-								<a href="./login.php" class="has-text-dark">
-									Already Have An Account?
-								</a>
+								<div>
+									<a href="./forgot-password" class="has-text-dark">Forgot Password?</a>
+								</div>
+							</div>
+							<div class="level-item has-text-centered">
+								<div>
+									<a href="./register.php" class="has-text-dark">Create an Account</a>
+								</div>
 							</div>
 						</nav>
 					</div>
@@ -63,8 +62,7 @@
 		</div>
 	</main>
 	<?php include './assets/scripts/php/global/foot_import.php'; ?>
-	<script src="./assets/scripts/js/register.js"></script>
-
+	<script src="./assets/scripts/js/login.js"></script>
 </body>
 
 </html>

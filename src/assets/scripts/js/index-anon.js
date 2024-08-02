@@ -21,5 +21,6 @@ createApp({
   },
   mounted() {
     this.setHomepageImg();
+    console.clear();
   },
 }).mount("#index-anon-app");
